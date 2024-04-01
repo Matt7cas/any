@@ -5,53 +5,52 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Sparks",
             artist: "Coldplay",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
-            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/aqb51-hllbl.jpg",
+            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a14dy-rl8dq.jpg",
             lyrics: `Did I drive you away?\n
-I know what you'll say\n
-You say, "Oh, sing one we know"\n
-But I promise you this\n
-I'll always look out for you\n
-Yeah, that's what I'll do\n
-I say, "Ohh"\n
-I say, "Ohh"\n
-My heart is yours\n
-It's you that I hold on to\n
-Yeah, that's what I do\n
-And I know, I was wrong\n
-But I won't let you down\n
-Oh, yeah, yeah, yeah, I will, yes, I will\n
-I said, "Ohh"\n
-I cry, "Ohh"\n
-Yeah, I saw sparks\n
-Yeah, I saw sparks\n
-And I saw sparks\n
-Yeah, I saw sparks\n
+I know what you'll say
+You say, "Oh, sing one we know"
+But I promise you this
+I'll always look out for you
+Yeah, that's what I'll do
+I say, "Ohh"
+I say, "Ohh"
+My heart is yours
+It's you that I hold on to
+Yeah, that's what I do
+And I know, I was wrong
+But I won't let you down
+Oh, yeah, yeah, yeah, I will, yes, I will
+I said, "Ohh"
+I cry, "Ohh"
+Yeah, I saw sparks
+Yeah, I saw sparks
+And I saw sparks
+Yeah, I saw sparks
 Sing it out`
         },
         {
             title: "Bubble Gum",
             artist: "clerio",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m335x-jivdf.mp3",
-            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a6dzg-gjq7s.jpg",
-            lyrics: "Sorry I didn't kiss you
-But it's obvious I wanted to
-Bubble gum down my throat and it's a curse
-But my luck couldn't get any worse
-'Cause I swallowed the bubble gum
-Oh, and these seven years will be pretty dumb
-Pink flowers grow from my skin
-Pepto Bismol veins and I grin
-You look so nice in your shirt
-It's sad because it just hurts
-I'd do anything for you
-But would you do that for me, too?
-'Cause I swallowed the bubble gum
-Oh, and these seven years will be pretty dumb
-Oh, pink flowers grow from my skin
-Oh, Pepto Bismol veins and I grin
-Oh
-Oh
-Oh"
+            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/afuhe-xdn2o.jpg",
+            lyrics: `sorry I didn\'t kiss you\n
+But it's obvious I wanted to\n
+Bubble gum down my throat and it's a curse\n
+But my luck couldn't get any worse\n
+'Cause I swallowed the bubble gum\n
+Oh, and these seven years will be pretty dumb\n
+Pink flowers grow from my skin\n
+Pepto Bismol veins and I grin\n
+You look so nice in your shirt\n
+It's sad because it just hurts\n
+I'd do anything for you\n
+But would you do that for me, too?\n
+'Cause I swallowed the bubble gum\n
+Oh, and these seven years will be pretty dumb\n
+Oh, pink flowers grow from my skin\n
+Oh, Pepto Bismol veins and I grin\n
+Oh\n
+Oh`
         }
     ];
 
