@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a14dy-rl8dq.jpg",
             lyrics: 'Did I drive you away?\n
-I know what you'll say\n'
+I know what you\'ll say\n'
         },
         {
             title: "Bubble Gum",
