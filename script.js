@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Sparks",
             artist: "Coldplay",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
-            albumArt: "sparks.jpg",
+            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/aqb51-hllbl.jpg",
             lyrics: "Feel the light, it's all around\nYou're the only one I've been dreaming of\nAll these stars, they're nothing next to you\nYou're the only one I've been dreaming of"
         },
         {
