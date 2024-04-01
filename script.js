@@ -6,7 +6,27 @@ document.addEventListener("DOMContentLoaded", function() {
             artist: "Coldplay",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/aqb51-hllbl.jpg",
-            lyrics: "Feel the light, it's all around\nYou're the only one I've been dreaming of\nAll these stars, they're nothing next to you\nYou're the only one I've been dreaming of"
+            lyrics: "Did I drive you away?
+I know what you'll say
+You say, "Oh, sing one we know"
+But I promise you this
+I'll always look out for you
+Yeah, that's what I'll do
+I say, "Ohh"
+I say, "Ohh"
+My heart is yours
+It's you that I hold on to
+Yeah, that's what I do
+And I know, I was wrong
+But I won't let you down
+Oh, yeah, yeah, yeah, I will, yes, I will
+I said, "Ohh"
+I cry, "Ohh"
+Yeah, I saw sparks
+Yeah, I saw sparks
+And I saw sparks
+Yeah, I saw sparks
+Sing it out"
         },
         {
             title: "Bubble Gum",
