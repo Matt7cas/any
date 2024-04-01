@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Sparks",
             artist: "Coldplay",
             src: "https://s187.convertio.me/p/H64Gg7M9INroYIvXZTqtIQ/d2f2b5d37604acbe305d9a4f3cd30e58/Sparks_MP3_160K_.mp3",
-            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/aifvg-13qqi.jpg",
+            albumArt: "https://i.postimg.cc/52W1tNhH/art-parachutes.jpg",
             lyrics: `Did I drive you away?
 I know what you'll say
 You say, "Oh, sing one we know"
@@ -33,7 +33,7 @@ Sing it out`
             title: "Bubble Gum",
             artist: "clerio",
             src: "https://s187.convertio.me/p/7W1VGaxGgGWjLyDFdrrcbA/d2f2b5d37604acbe305d9a4f3cd30e58/Bubble-Gum_MP3_160K_.mp3",
-            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/atdmi-bh1ko.jpg",
+            albumArt: "https://i.postimg.cc/P51Xb8Wz/descarga-2.jpg",
             lyrics: `sorry I didn\'t kiss you\n But it\'s obvious I wanted to\nBubble gum down my throat and it\'s a curse\n But my luck couldn\'t get any worse\n\'Cause I swallowed the bubble gum\n Oh, and these seven years will be pretty dumb\n Pink flowers grow from my skin\n Pepto Bismol veins and I grin\n You look so nice in your shirt\n It's sad because it just hurts\n I'd do anything for you\n But would you do that for me, too?\n 'Cause I swallowed the bubble gum\nOh, and these seven years will be pretty dumb\nOh, pink flowers grow from my skin\nOh, Pepto Bismol veins and I grin\nOh\n Oh`
         }
     ];
