@@ -2,36 +2,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const songs = [
         {
+            
             title: "Sparks",
             artist: "Coldplay",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a14dy-rl8dq.jpg",
-            lyrics: 'Did I drive you away?\n
-I know what you\'ll say\n'
-        },
+            lyrics: `Did I drive you away?
+I know what you'll say
+You say, "Oh, sing one we know"
+But I promise you this
+I'll always look out for you
+Yeah, that's what I'll do
+I say, "Ohh"
+I say, "Ohh"
+My heart is yours
+It's you that I hold on to
+Yeah, that's what I do
+And I know, I was wrong
+But I won't let you down
+Oh, yeah, yeah, yeah, I will, yes, I will
+I said, "Ohh"
+I cry, "Ohh"
+Yeah, I saw sparks
+Yeah, I saw sparks
+And I saw sparks
+Yeah, I saw sparks
+Sing it out`
+        },                
         {
             title: "Bubble Gum",
             artist: "clerio",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m335x-jivdf.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/afuhe-xdn2o.jpg",
-            lyrics: `sorry I didn\'t kiss you\n
-But it's obvious I wanted to\n
-Bubble gum down my throat and it's a curse\n
-But my luck couldn't get any worse\n
-'Cause I swallowed the bubble gum\n
-Oh, and these seven years will be pretty dumb\n
-Pink flowers grow from my skin\n
-Pepto Bismol veins and I grin\n
-You look so nice in your shirt\n
-It's sad because it just hurts\n
-I'd do anything for you\n
-But would you do that for me, too?\n
-'Cause I swallowed the bubble gum\n
-Oh, and these seven years will be pretty dumb\n
-Oh, pink flowers grow from my skin\n
-Oh, Pepto Bismol veins and I grin\n
-Oh\n
-Oh`
+            lyrics: `sorry I didn\'t kiss you\n But it\'s obvious I wanted to\nBubble gum down my throat and it\'s a curse\n But my luck couldn\'t get any worse\n\'Cause I swallowed the bubble gum\n Oh, and these seven years will be pretty dumb\n Pink flowers grow from my skin\n Pepto Bismol veins and I grin\n You look so nice in your shirt\n It's sad because it just hurts\n I'd do anything for you\n But would you do that for me, too?\n 'Cause I swallowed the bubble gum\nOh, and these seven years will be pretty dumb\nOh, pink flowers grow from my skin\nOh, Pepto Bismol veins and I grin\nOh\n Oh`
         }
     ];
 
@@ -53,29 +56,29 @@ Oh`
     const audioElement = new Audio();
 
     function loadSong(song) {
-        songTitle.textContent = song.title;
-        artist.textContent = song.artist;
-        albumArt.src = song.albumArt;
-        lyrics.textContent = song.lyrics;
-        audioElement.src = song.src;
-        audioElement.addEventListener("loadedmetadata", () => {
-            duration.textContent = formatTime(audioElement.duration);
+    songTitle.textContent = song.title;
+    artist.textContent = song.artist;
+    albumArt.src = song.albumArt;
+    lyrics.innerHTML = song.lyrics.split('\n').join('<br>'); // Modificación aquí
+    audioElement.src = song.src;
+    audioElement.addEventListener("loadedmetadata", () => {
+        duration.textContent = formatTime(audioElement.duration);
+    });
+
+    // Manejar la promesa devuelta por audioElement.play()
+    const playPromise = audioElement.play();
+
+    if (playPromise !== undefined) {
+        playPromise.then(_ => {
+            // La reproducción automática comenzó correctamente
+            // Realizar acciones necesarias, si las hay
+        })
+        .catch(error => {
+            // La reproducción automática fue prevenida
+            // Mostrar la interfaz pausada o realizar otras acciones necesarias
         });
-
-        // Manejar la promesa devuelta por audioElement.play()
-        const playPromise = audioElement.play();
-
-        if (playPromise !== undefined) {
-            playPromise.then(_ => {
-                // La reproducción automática comenzó correctamente
-                // Realizar acciones necesarias, si las hay
-            })
-            .catch(error => {
-                // La reproducción automática fue prevenida
-                // Mostrar la interfaz pausada o realizar otras acciones necesarias
-            });
-        }
     }
+}
 
     function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
