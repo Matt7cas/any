@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a14dy-rl8dq.jpg",
             lyrics: `Did I drive you away?\n
-I know what you'll say <be>
-You say, "Oh, sing one we know" <br>
-But I promise you this
+I know what you'll say\n
+You say, "Oh, sing one we know"\n
+But I promise you this\n
 I'll always look out for you
 Yeah, that's what I'll do
 I say, "Ohh"
