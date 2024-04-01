@@ -60,16 +60,19 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.2s;
+    transition: .5s ease-in-out;
 }
 
 .controls button:hover {
     background-color: #444;
+   
 }
 
 .play-pause {
     background-color: #4caf50;
     color: #fff;
     width: 80px;
+    transition: .5s ease-in-out;
 }
 
 .play-pause:hover {
@@ -79,6 +82,7 @@ body {
 .player.playing .play-pause {
     background-color: #8098ff;
     color: #fff;
+    transition: .5s ease-in-out;
 }
 
 .player.playing .play-pause:hover {
@@ -91,6 +95,7 @@ body {
     color: #fff;
     padding: 5px 10px;
     width: 80px;
+    transition: .5s ease-in-out;
 }
 
 .prev-song:hover,
@@ -101,7 +106,8 @@ body {
 .loop-song {
     background-color: #9c27b0;
     color: #fff;
-    width: 80px;
+    width: 80px;    
+    transition: .5s ease-in-out;
 }
 
 .loop-song:hover {
@@ -113,20 +119,24 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    transition: .5s ease-in-out;
 }
 
 .duration {
     order: 2;
+    transition: .5s ease-in-out;
 }
 
 .elapsed-time {
     order: 1;
+    transition: .5s ease-in-out;
 }
 
 .audio-controls {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    transition: .5s ease-in-out;
 }
 
 .duration-bar {
@@ -134,17 +144,20 @@ body {
     height: 4px;
     background-color: #ccc;
     margin-top: 5px;
+    transition: .5s ease-in-out;
 }
 
 .duration-fill {
     height: 100%;
     background-color: #4caf50; /* Cambia el color a tu preferencia */
     width: 0;
+    transition: .5s ease-in-out;
 }
 .progress-bar {
   width: 100%;
   height: 8px; /* ajusta la altura según sea necesario */
   background-color: #ccc; /* color de fondo de la barra de progreso */
+  transition: .5s ease-in-out;
 }
 
 .progress-fill {
