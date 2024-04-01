@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Bubble Gum",
             artist: "clerio",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m335x-jivdf.mp3",
-            albumArt: "bubblegum.jpeg",
+            albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a6dzg-gjq7s.jpg",
             lyrics: "Woo-hoo!"
         }
     ];
