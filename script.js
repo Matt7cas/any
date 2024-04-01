@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const songs = [
         {
-            
+
             title: "Sparks",
             artist: "Coldplay",
             src: "Sparks(MP3_160K).mp3",
@@ -114,14 +114,14 @@ Sing it out`
         isPlaying = true;
         player.classList.add("playing");
         audioElement.play();
-        playPauseButton.textContent = "Pause";
+        playPauseButton.innerHTML= `<i class=\"fa-solid fa-pause"></i>`
     }
 
     function pauseSong() {
         isPlaying = false;
         player.classList.remove("playing");
         audioElement.pause();
-        playPauseButton.textContent = "Play";
+        playPauseButton.innerHTML = `<i class="fa-solid fa-play"></i>`;
     }
 
     prevSongButton.addEventListener("click", () => {
@@ -145,4 +145,3 @@ Sing it out`
 
     loadSong(songs[currentSongIndex]);
 });
-
