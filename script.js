@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Sparks",
             artist: "Coldplay",
             src: "Sparks(MP3_160K).mp3",
-            albumArt: "art-parachutes.jpg",
+            albumArt: "art_parachutes.jpg",
             lyrics: `Did I drive you away?
 I know what you'll say
 You say, "Oh, sing one we know"
