@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>feli kumpleaño</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<div class="card">
-                <div class="imgBox">
-                        <div class="bark"></div>
-                        <img src="https://image.ibb.co/fYzTrb/lastofus.jpg">
+    <div class="player">
+        <div class="song-info">
+            <img class="album-art" src="sparks.jpg" alt="Sparks album art">
+            <h1 class="song-title">Sparks</h1>
+            <p class="artist">Coldplay</p>
+            <p class="lyrics">Feel the light, it's all around</p>
+            <div class="time-info">
+                <p class="elapsed-time">0:00</p>
+                <p class="duration">0:00</p><br><br>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
                 </div>
-                <div class="details">
-                        <h4 class="color1">feelises xv</h2>
-                        <h4 class="color2 margin">aanyelina pasten</h3>
-                        <p>sos tan pelotuda</p>
-                        <p>qur me caes bien</p>
-                        <p>down autista</p>
-                        <p>de mierda</p>
-                        <p>tkm</p>
-                        <p>felices</p>
-                        <p>XV</p>
-                        <p>uwu</p>
-                        <p class="text-right">feli cumple</p>
-                        <p class="text-right">matt</p>
-                </div>
+            </div>
         </div>
-
+        <div class="controls">
+            <button class="prev-song">Previous Song</button>
+            <button class="play-pause">Play</button>
+            <button class="loop-song">Loop Song</button>
+            <button class="next-song">Next Song</button>
+        </div>
+        <audio class="audio-element" src="https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
