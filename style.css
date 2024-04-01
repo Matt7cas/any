@@ -69,6 +69,7 @@ body {
 .play-pause {
     background-color: #4caf50;
     color: #fff;
+    width: 80px;
 }
 
 .play-pause:hover {
@@ -76,18 +77,20 @@ body {
 }
 
 .player.playing .play-pause {
-    background-color: #f44336;
+    background-color: #8098ff;
     color: #fff;
 }
 
 .player.playing .play-pause:hover {
-    background-color: #f85a42;
+    background-color: #8098ff;
 }
 
 .prev-song,
 .next-song {
     background-color: #2196f3;
     color: #fff;
+    padding: 5px 10px;
+    width: 80px;
 }
 
 .prev-song:hover,
@@ -98,6 +101,7 @@ body {
 .loop-song {
     background-color: #9c27b0;
     color: #fff;
+    width: 80px;
 }
 
 .loop-song:hover {
@@ -161,3 +165,26 @@ body {
   top: -20px; /* ajusta la posición vertical según sea necesario */
   right: 0; /* coloca el elemento a la derecha */
 }
+@media only screen and (max-width: 600px) {
+    .player {
+        max-width: 300px; /* Reducir el ancho máximo para pantallas más pequeñas */
+    }
+    .controls button {
+        padding: 8px; /* Reducir el espacio entre los botones */
+        font-size: 14px; /* Reducir el tamaño de fuente de los botones */
+    }
+    .album-art {
+        width: 150px; /* Reducir el tamaño de la imagen del álbum */
+        height: 150px;
+    }
+    .song-title {
+        font-size: 20px; /* Reducir el tamaño del título de la canción */
+    }
+    .artist {
+        font-size: 16px; /* Reducir el tamaño del nombre del artista */
+    }
+}
+
+/* Estilos adicionales para otros tamaños de pantalla */
+
+/* Resto de tus estilos... */
