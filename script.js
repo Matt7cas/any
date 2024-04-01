@@ -33,7 +33,25 @@ Sing it out"
             artist: "clerio",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m335x-jivdf.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a6dzg-gjq7s.jpg",
-            lyrics: "Woo-hoo!"
+            lyrics: "Sorry I didn't kiss you
+But it's obvious I wanted to
+Bubble gum down my throat and it's a curse
+But my luck couldn't get any worse
+'Cause I swallowed the bubble gum
+Oh, and these seven years will be pretty dumb
+Pink flowers grow from my skin
+Pepto Bismol veins and I grin
+You look so nice in your shirt
+It's sad because it just hurts
+I'd do anything for you
+But would you do that for me, too?
+'Cause I swallowed the bubble gum
+Oh, and these seven years will be pretty dumb
+Oh, pink flowers grow from my skin
+Oh, Pepto Bismol veins and I grin
+Oh
+Oh
+Oh"
         }
     ];
 
