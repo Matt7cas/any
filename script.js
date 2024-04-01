@@ -6,27 +6,27 @@ document.addEventListener("DOMContentLoaded", function() {
             artist: "Coldplay",
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/aqb51-hllbl.jpg",
-            lyrics: "Did I drive you away?
-I know what you'll say
-You say, "Oh, sing one we know"
-But I promise you this
-I'll always look out for you
-Yeah, that's what I'll do
-I say, "Ohh"
-I say, "Ohh"
-My heart is yours
-It's you that I hold on to
-Yeah, that's what I do
-And I know, I was wrong
-But I won't let you down
-Oh, yeah, yeah, yeah, I will, yes, I will
-I said, "Ohh"
-I cry, "Ohh"
-Yeah, I saw sparks
-Yeah, I saw sparks
-And I saw sparks
-Yeah, I saw sparks
-Sing it out"
+            lyrics: `Did I drive you away?\n
+I know what you'll say\n
+You say, "Oh, sing one we know"\n
+But I promise you this\n
+I'll always look out for you\n
+Yeah, that's what I'll do\n
+I say, "Ohh"\n
+I say, "Ohh"\n
+My heart is yours\n
+It's you that I hold on to\n
+Yeah, that's what I do\n
+And I know, I was wrong\n
+But I won't let you down\n
+Oh, yeah, yeah, yeah, I will, yes, I will\n
+I said, "Ohh"\n
+I cry, "Ohh"\n
+Yeah, I saw sparks\n
+Yeah, I saw sparks\n
+And I saw sparks\n
+Yeah, I saw sparks\n
+Sing it out`
         },
         {
             title: "Bubble Gum",
