@@ -7,26 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             src: "https://s17.aconvert.com/convert/p3r68-cdx67/m8a5c-vw8zq.mp3",
             albumArt: "https://s4.aconvert.com/convert/p3r68-cdx67/a14dy-rl8dq.jpg",
             lyrics: `Did I drive you away?\n
-I know what you'll say\n
-You say, "Oh, sing one we know"\n
-But I promise you this\n
-I'll always look out for you
-Yeah, that's what I'll do
-I say, "Ohh"
-I say, "Ohh"
-My heart is yours
-It's you that I hold on to
-Yeah, that's what I do
-And I know, I was wrong
-But I won't let you down
-Oh, yeah, yeah, yeah, I will, yes, I will
-I said, "Ohh"
-I cry, "Ohh"
-Yeah, I saw sparks
-Yeah, I saw sparks
-And I saw sparks
-Yeah, I saw sparks
-Sing it out`
+I know what you'll say\n`
         },
         {
             title: "Bubble Gum",
