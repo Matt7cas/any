@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+    
     const songs = [
         {
-
             title: "Sparks",
             artist: "Coldplay",
             src: "Sparks(MP3_160K).mp3",
@@ -28,13 +27,14 @@ Yeah, I saw sparks
 And I saw sparks
 Yeah, I saw sparks
 Sing it out`
-        },                
+        },
         {
             title: "Bubble Gum",
             artist: "clerio",
             src: "Bubblegum(MP3_160K).mp3",
             albumArt: "bubblegum.jpeg",
             lyrics: `sorry I didn\'t kiss you\n But it\'s obvious I wanted to\nBubble gum down my throat and it\'s a curse\n But my luck couldn\'t get any worse\n\'Cause I swallowed the bubble gum\n Oh, and these seven years will be pretty dumb\n Pink flowers grow from my skin\n Pepto Bismol veins and I grin\n You look so nice in your shirt\n It's sad because it just hurts\n I'd do anything for you\n But would you do that for me, too?\n 'Cause I swallowed the bubble gum\nOh, and these seven years will be pretty dumb\nOh, pink flowers grow from my skin\nOh, Pepto Bismol veins and I grin\nOh\n Oh`
+
         }
     ];
 
@@ -53,32 +53,32 @@ Sing it out`
     const loopSongButton = document.querySelector(".loop-song");
     const nextSongButton = document.querySelector(".next-song");
     const playPauseButton = document.querySelector(".play-pause");
+    const progressBar = document.querySelector(".progress-bar");
+    const progressFill = document.querySelector(".progress-fill");
+    const volumeControl = document.querySelector(".volume-control");
     const audioElement = new Audio();
 
     function loadSong(song) {
-    songTitle.textContent = song.title;
-    artist.textContent = song.artist;
-    albumArt.src = song.albumArt;
-    lyrics.innerHTML = song.lyrics.split('\n').join('<br>'); // Modificación aquí
-    audioElement.src = song.src;
-    audioElement.addEventListener("loadedmetadata", () => {
-        duration.textContent = formatTime(audioElement.duration);
-    });
-
-    // Manejar la promesa devuelta por audioElement.play()
-    const playPromise = audioElement.play();
-
-    if (playPromise !== undefined) {
-        playPromise.then(_ => {
-            // La reproducción automática comenzó correctamente
-            // Realizar acciones necesarias, si las hay
-        })
-        .catch(error => {
-            // La reproducción automática fue prevenida
-            // Mostrar la interfaz pausada o realizar otras acciones necesarias
+        songTitle.textContent = song.title;
+        artist.textContent = song.artist;
+        albumArt.src = song.albumArt;
+        lyrics.innerHTML = song.lyrics.split('\n').join('<br>');
+        audioElement.src = song.src;
+        audioElement.addEventListener("loadedmetadata", () => {
+            duration.textContent = formatTime(audioElement.duration);
         });
+
+        const playPromise = audioElement.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                // La reproducción automática comenzó correctamente
+            })
+            .catch(error => {
+                // La reproducción automática fue prevenida
+            });
+        }
     }
-}
 
     function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
@@ -91,8 +91,6 @@ Sing it out`
     }
 
     function updateProgressBar() {
-        const progressFill = document.querySelector(".progress-fill");
-
         const progressWidth = (audioElement.currentTime / audioElement.duration) * 100;
         progressFill.style.width = `${progressWidth}%`;
     }
@@ -114,7 +112,7 @@ Sing it out`
         isPlaying = true;
         player.classList.add("playing");
         audioElement.play();
-        playPauseButton.innerHTML= `<i class=\"fa-solid fa-pause"></i>`
+        playPauseButton.innerHTML = `<i class="fa-solid fa-pause"></i>`;
     }
 
     function pauseSong() {
@@ -127,8 +125,6 @@ Sing it out`
     prevSongButton.addEventListener("click", () => {
         currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
         loadSong(songs[currentSongIndex]);
-        // No reproducir automáticamente al cambiar de canción
-        // playSong();
     });
 
     loopSongButton.addEventListener("click", () => {
@@ -139,8 +135,25 @@ Sing it out`
     nextSongButton.addEventListener("click", () => {
         currentSongIndex = (currentSongIndex + 1) % songs.length;
         loadSong(songs[currentSongIndex]);
-        // No reproducir automáticamente al cambiar de canción
-        // playSong();
+    });
+
+    progressBar.addEventListener("click", (e) => {
+        const rect = progressBar.getBoundingClientRect();
+        const offsetX = e.clientX - rect.left;
+        const newTime = (offsetX / progressBar.clientWidth) * audioElement.duration;
+        audioElement.currentTime = newTime;
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") {
+            audioElement.currentTime = Math.min(audioElement.currentTime + 5, audioElement.duration);
+        } else if (e.key === "ArrowLeft") {
+            audioElement.currentTime = Math.max(audioElement.currentTime - 5, 0);
+        }
+    });
+
+    volumeControl.addEventListener("input", (e) => {
+        audioElement.volume = e.target.value;
     });
 
     loadSong(songs[currentSongIndex]);
