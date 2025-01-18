@@ -11,7 +11,8 @@ body {
 .player {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -65,7 +66,6 @@ body {
 
 .controls button:hover {
     background-color: #444;
-   
 }
 
 .play-pause {
@@ -149,55 +149,40 @@ body {
 
 .duration-fill {
     height: 100%;
-    background-color: #4caf50; /* Cambia el color a tu preferencia */
+    background-color: #4caf50;
     width: 0;
     transition: .5s ease-in-out;
 }
+
 .progress-bar {
-  width: 100%;
-  height: 8px; /* ajusta la altura según sea necesario */
-  background-color: #ccc; /* color de fondo de la barra de progreso */
-  transition: .5s ease-in-out;
+    width: 100%;
+    height: 8px;
+    background-color: #ccc;
+    transition: .5s ease-in-out;
 }
 
 .progress-fill {
-  height: 100%;
-  background-color: #4caf50; /* color de la barra de progreso */
+    height: 100%;
+    background-color: #4caf50;
 }
+
 .time-info {
-  position: relative;
+    position: relative;
 }
 
 .elapsed-time {
-  position: absolute;
-  top: -20px; /* ajusta la posición vertical según sea necesario */
-  left: 0; /* coloca el elemento a la izquierda */
+    position: absolute;
+    top: -20px;
+    left: 0;
 }
+
 .duration {
-  position: absolute;
-  top: -20px; /* ajusta la posición vertical según sea necesario */
-  right: 0; /* coloca el elemento a la derecha */
+    position: absolute;
+    top: -20px;
+    right: 0;
 }
-@media only screen and (max-width: 600px) {
-    .player {
-        max-width: 300px; /* Reducir el ancho máximo para pantallas más pequeñas */
-    }
-    .controls button {
-        padding: 8px; /* Reducir el espacio entre los botones */
-        font-size: 14px; /* Reducir el tamaño de fuente de los botones */
-    }
-    .album-art {
-        width: 150px; /* Reducir el tamaño de la imagen del álbum */
-        height: 150px;
-    }
-    .song-title {
-        font-size: 20px; /* Reducir el tamaño del título de la canción */
-    }
-    .artist {
-        font-size: 16px; /* Reducir el tamaño del nombre del artista */
-    }
-}
-/* Agregar estilos para el control de volumen */
+
+/* Estilos para el control de volumen */
 .volume-control-container {
     display: flex;
     justify-content: center;
@@ -207,4 +192,25 @@ body {
 .volume-control {
     width: 80%;
     transition: .5s ease-in-out;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    .player {
+        max-width: 300px;
+    }
+    .controls button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .album-art {
+        width: 150px;
+        height: 150px;
+    }
+    .song-title {
+        font-size: 20px;
+    }
+    .artist {
+        font-size: 16px;
+    }
 }
