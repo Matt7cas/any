@@ -197,7 +197,14 @@ body {
         font-size: 16px; /* Reducir el tamaño del nombre del artista */
     }
 }
+/* Agregar estilos para el control de volumen */
+.volume-control-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-/* Estilos adicionales para otros tamaños de pantalla */
-
-/* Resto de tus estilos... */
+.volume-control {
+    width: 80%;
+    transition: .5s ease-in-out;
+}
