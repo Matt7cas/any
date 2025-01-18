@@ -37,7 +37,6 @@ Sing it out`
 
         }
     ];
-
     let currentSongIndex = 0;
     let isPlaying = false;
     let isLooping = false;
